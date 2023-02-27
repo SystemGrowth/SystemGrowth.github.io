@@ -14,7 +14,7 @@ body {
     background-image: linear-gradient(to top, #F4BA93 0%, #A04000 100%);
 }
 
-.login-container {
+.register-container {
     height: 43.75em;
     width: 60em;
     margin: 6em auto;
@@ -24,7 +24,7 @@ body {
     overflow: hidden;
 }
 
-.login-info-container {
+.register-info-container {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -49,39 +49,8 @@ body {
     color: var(--title-bg);
 }
 
-.social-login {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
 
-.social-login-element {
-    width: 12.5rem;
-    height: 3.75rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border-radius: 5px;
-    border: 1px solid var(--button-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-login-element img {
-    width: 1.875rem;
-    height: 1.875rem;
-    position: relative;
-    top: 0;
-    left: -0.625rem;
-}
-
-.social-login-element:hover {
-    background-color: #82E0AA;
-}
-
-.login-info-container > p {
+.register-info-container > p {
     font-size: 1.25em;
     margin-top: 1.5em;
 }

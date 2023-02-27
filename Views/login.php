@@ -30,7 +30,7 @@
                     <label ><input type="checkbox" onclick="myFunction()">Ver contraseña</label> <br>
                     <p>Olvidaste tu contraseña? <span class="span">Click Aquí</span></p>
                     <button class="btn">Iniciar sesión</button>
-                    <p>No tienes cuenta? <a class="span" href="">Registrate</a></p>
+                    <p>No tienes cuenta? <a class="span" href="<?= base_url(); ?>/register">Registrate</a></p>
                 </form>
             </div>
                 <img class="image-container" src="<?= media(); ?>/images/img_login/logo.png" alt="">
