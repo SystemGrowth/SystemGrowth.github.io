@@ -1,9 +1,6 @@
-<?php
-	$anio_actual = date("Y");
-	$nombre_autor = "Jeanpier Palomino - Dante Revilla";
-?>
-<footer style="text-align:center; position:fixed;left:0;bottom: 0;width: 100%;background-color: #222D32;padding: 3px;color:white;">
-  	<p>&copy; <?php echo $anio_actual; ?> <?php echo $nombre_autor; ?>. Todos los derechos reservados.</p>
+
+<footer class="bg3 p-t-75 p-b-32">
+	<h1 align=center>ADADADADADAD</h1>
 </footer>
     <script>
         const base_url = "<?= base_url(); ?>";
