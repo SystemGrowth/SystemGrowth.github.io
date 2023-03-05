@@ -41,3 +41,18 @@ const EMAIL_PEDIDOS = "";
 const EMAIL_SUSCRIPCION = "";
 const EMAIL_CONTACTO = "";
 
+//MODULOS
+const MDASHBOARD = 1;
+	const MUSUARIOS = 2;
+	const MPROVEEDORES = 3;
+	const MDINSUMOS = 4;
+	const MPRODUCTOS = 5;
+	const MCATEGORIAS = 6;
+	const MCOMPRAS = 7;
+	const MVENTAS = 8;
+	const MDPAGINAS = 9;
+
+//Roles
+const RADMINISTRADOR = 1;
+const RSUPERVISOR = 2;
+const RVENDEDOR = 3;
