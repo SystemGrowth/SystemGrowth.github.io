@@ -12,25 +12,12 @@
     <body>
         <div class="login-container">
             <div class="login-info-container">
-                <h1 class="title">Inicia Sesión</h1>
-                <div class="social-login">
-                    <div class="social-login-element">
-                        <img src="<?= media(); ?>/images/img_login/google.png" alt="google-image">
-                        <span>Google</span>
-                    </div>
-                    <div class="social-login-element">
-                        <img src="<?= media(); ?>/images/img_login/facebook.png" alt="facebook-image">
-                        <span>Facebook</span>
-                    </div>
-                </div>
-                <p>o</p>
+                <h1 class="title">Inicia Sesión</h1>  <br>              
                 <form class="inputs-container">
-                    <input class="input" type="text" placeholder="Usuario" required>
-                    <input class="input" type="password" placeholder="Contraseña" id="inputcontraseña" required maxlength="20">
-                    <label ><input type="checkbox" onclick="myFunction()">Ver contraseña</label> <br>
-                    <p>Olvidaste tu contraseña? <span class="span">Click Aquí</span></p>
+                    <input class="input" type="text" placeholder="Ingresa tu usuario" required>
+                    <input class="input" type="password" placeholder="Ingresa tu contraseña" id="inputcontraseña" required maxlength="20">
+                    <label ><input type="checkbox" onclick="myFunction()">Ver contraseña</label>
                     <button class="btn">Iniciar sesión</button>
-                    <p>No tienes cuenta? <a class="span" href="<?= base_url(); ?>/register">Registrate</a></p>
                 </form>
             </div>
                 <img class="image-container" src="<?= media(); ?>/images/img_login/logo.png" alt="">
@@ -47,5 +34,17 @@
                 }
             }
         </script>
+           
     </body>
+    <footer>
+        <h3 class="footer">
+        <?php
+            $anio_actual = date("Y");
+            $nombre_autor = "Jeanpier Palomino - Dante Revilla";
+            ?>
+            <footer>
+            <p>&copy; <?php echo $anio_actual; ?> <?php echo $nombre_autor; ?>. Todos los derechos reservados.</p>
+            </footer>
+        </h3>
+    </footer>
 </html>

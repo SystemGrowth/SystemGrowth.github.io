@@ -20,7 +20,7 @@
                     <input class="input" type="email" placeholder="E-mail" required>
                     <input class="input" type="password" placeholder="Contraseña"><br>
                     <button class="btn">Registrarse</button>
-                    <a href="<?= base_url(); ?>/login">Atras</a>
+                    <a class="span" href="<?= base_url(); ?>/login">Atras</a>
                 </form>
             </div>
                 <img class="image-container" src="<?= media(); ?>/images/img_login/logo.png" alt="">
