@@ -7,7 +7,7 @@ date_default_timezone_set("America/Lima");
 
 //DATOS DE CONEXION A BASE DE DATOS
 const DB_HOST = "localhost";
-const DB_NAME = "";
+const DB_NAME = "db_panaderia";
 const DB_USER = "root";
 const DB_PASSWORD = "";
 const DB_CHARSET = "utf8";
@@ -23,6 +23,11 @@ const SPM = ",";
 const SMONEY = "S/.";
 const CURRENCY = "USD";
 
+//Datos envio de correo
+const NOMBRE_REMITENTE = "";
+const EMAIL_REMITENTE = "";
+const NOMBRE_EMPESA = "";
+const WEB_EMPRESA = "";
 
 const DESCRIPCION = "La mejor tienda en productos tecnologicos";
 const SHAREDHASH = "Tecnologic world";
