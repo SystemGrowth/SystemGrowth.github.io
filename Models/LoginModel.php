@@ -17,7 +17,7 @@
 			$this->strUsuario = $usuario;
 			$this->strPassword = $password;
 			$sql = "SELECT idusuario,status FROM usuario WHERE 
-					gmail = '$this->strUsuario' and 
+					nom_user = '$this->strUsuario' and 
 					password = '$this->strPassword' and 
 					status != 0 ";
 			$request = $this->select($sql);
@@ -31,12 +31,12 @@
 							u.nombres,
 							u.apellidos,
 							u.telefono,
-							u.gmail,
+							u.nom_user,
 							r.idrol,r.nombre,
 							u.status 
 					FROM usuario u
 					INNER JOIN rol r
-					ON u.rolid = r.idrol
+					ON u.rol_id = r.idrol
 					WHERE u.idusuario = $this->intIdUsuario";
 			$request = $this->select($sql);
 			$_SESSION['userData'] = $request;
@@ -45,40 +45,12 @@
 
 		public function getUserEmail(string $strEmail){
 			$this->strUsuario = $strEmail;
-			$sql = "SELECT idpersona,nombres,apellidos,status FROM persona WHERE 
-					email_user = '$this->strUsuario' and  
+			$sql = "SELECT idusuario,nombres,apellidos,status FROM usuario WHERE 
+					nom_user = '$this->strUsuario' and  
 					status = 1 ";
 			$request = $this->select($sql);
 			return $request;
 		}
 
-		public function setTokenUser(int $idpersona, string $token){
-			$this->intIdUsuario = $idpersona;
-			$this->strToken = $token;
-			$sql = "UPDATE persona SET token = ? WHERE idpersona = $this->intIdUsuario ";
-			$arrData = array($this->strToken);
-			$request = $this->update($sql,$arrData);
-			return $request;
-		}
-
-		public function getUsuario(string $email, string $token){
-			$this->strUsuario = $email;
-			$this->strToken = $token;
-			$sql = "SELECT idpersona FROM persona WHERE 
-					email_user = '$this->strUsuario' and 
-					token = '$this->strToken' and 					
-					status = 1 ";
-			$request = $this->select($sql);
-			return $request;
-		}
-
-		public function insertPassword(int $idPersona, string $password){
-			$this->intIdUsuario = $idPersona;
-			$this->strPassword = $password;
-			$sql = "UPDATE persona SET password = ?, token = ? WHERE idpersona = $this->intIdUsuario ";
-			$arrData = array($this->strPassword,"");
-			$request = $this->update($sql,$arrData);
-			return $request;
-		}
 	}
  ?>

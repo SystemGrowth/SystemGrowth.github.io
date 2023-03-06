@@ -6,7 +6,7 @@
  require_once("Helpers/Helpers.php");
 
  // Comprueba si se ha proporcionado una URL en la variable GET llamada "url". 
- // Si se ha proporcionado, la asigna a la variable $url. De lo contrario, la asigna a 'home/home'.
+ // Si se ha proporcionado, la asigna a la variable $url. De lo contrario, la asigna a 'login/login'.
  $url = !empty($_GET['url']) ? $_GET['url'] : 'login/login';
 
  // Divide la URL en segmentos usando la función explode y los almacena en un array llamado $arrUrl.
