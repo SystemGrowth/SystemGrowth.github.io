@@ -8,11 +8,11 @@
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item active" href="<?= base_url(); ?>/dashboard""><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item " href="<?= base_url(); ?>/dashboard""><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
 
         <li class="treeview">
           <a class="app-menu__item" href="#" data-toggle="treeview">
-            <i class="app-menu__icon fa fa-laptop"></i>
+            <i class="app-menu__icon fas fa-user"></i>
             <span class="app-menu__label"> Usuarios </span>
             <i class="treeview-indicator fa fa-angle-right"></i>
           </a>
@@ -26,23 +26,23 @@
           </ul>
         </li>
 
-        <li>
+        <!--<li>
           <a class="app-menu__item" href="<?= base_url(); ?>/clientes"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Clientes</span></a>
+        </li>-->
+        <li>
+          <a class="app-menu__item" href="<?= base_url(); ?>/proveedores"><i class="app-menu__icon fas fa-shipping-fast"></i><span class="app-menu__label">Proveedores</span></a>
         </li>
         <li>
-          <a class="app-menu__item" href="<?= base_url(); ?>/proveedores"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Proveedores</span></a>
+          <a class="app-menu__item" href="<?= base_url(); ?>/compras"><i class="app-menu__icon fas fa-cart-plus"></i><span class="app-menu__label">Compras</span></a>
         </li>
         <li>
-          <a class="app-menu__item" href="<?= base_url(); ?>/compras"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Compras</span></a>
-        </li>
-        <li>
-          <a class="app-menu__item" href="<?= base_url(); ?>/ventas"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Ventas</span></a>
+          <a class="app-menu__item" href="<?= base_url(); ?>/ventas"><i class="app-menu__icon fas fa-spell-check"></i><span class="app-menu__label">Ventas</span></a>
         </li>     
         
 
         <li class="treeview">
           <a class="app-menu__item" href="#" data-toggle="treeview">
-            <i class="app-menu__icon fa fa-th-list"></i>
+            <i class="app-menu__icon fas fa-shopping-basket"></i>
             <span class="app-menu__label">Productos</span>
             <i class="treeview-indicator fa fa-angle-right"></i>
           </a>
